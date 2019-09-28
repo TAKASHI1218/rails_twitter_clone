@@ -1,0 +1,21 @@
+<%= form_with(model: @kadai, url: choose_new_or_edit, local: true) do |form| %>
+  <% if @kadai.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @kadai.errors.count %>件のエラーがあります。</h2>
+      <ul>
+
+      <% @kadai.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="kadai_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
+
+<%= link_to class=message '投稿一覧に戻る', kadais_path %>

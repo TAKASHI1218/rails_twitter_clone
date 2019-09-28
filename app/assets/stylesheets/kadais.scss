@@ -1,0 +1,36 @@
+html{
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+body{
+   height: 100%;
+   background-color: #F5B3;
+ }
+
+header{
+  background-color: #F5B4B3;
+  height: 100px;
+  font-size: 1.5rem;
+}
+.comment{
+  width:1000px;
+  height: 30px;
+}
+.function{
+  width:200px;
+  height: 30px;
+}
+footer{
+  background-color: #f4D;
+  height: 100px;
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+  display: table;
+  }
+.message{
+  font-size: 1.5rem;
+  font-style: color red;
+}
