@@ -3,7 +3,6 @@
     <div id="error_explanation">
       <h2><%= @kadai.errors.count %>件のエラーがあります。</h2>
       <ul>
-
       <% @kadai.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
@@ -18,4 +17,4 @@
   <%= form.submit %>
 <% end %>
 
-<%= link_to class=message '投稿一覧に戻る', kadais_path %>
+<%= link_to '投稿一覧に戻る', kadais_path %>

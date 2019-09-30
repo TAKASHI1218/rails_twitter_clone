@@ -3,7 +3,7 @@ module KadaisHelper
     if action_name == 'new' || action_name == 'confirm' || action_name == 'create'
         confirm_kadais_path
       elsif action_name == 'edit'
-        kadais_path
+        kadai_path
       end
     end
   end
