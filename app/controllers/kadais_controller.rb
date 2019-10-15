@@ -4,7 +4,7 @@ class KadaisController < ApplicationController
   def index
     @kadais = Kadai.all
   end
-  
+
   def new
     @kadai = Kadai.new
   end
